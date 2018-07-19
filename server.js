@@ -3,15 +3,15 @@ app = express();
 
 var request = require("request");
 
-request({
-  uri: "http://www.sitepoint.com",
-  method: "GET",
-  timeout: 10000,
-  followRedirect: true,
-  maxRedirects: 10
-}, function(error, response, body) {
-  console.log(body);
-});
+// request({
+//   uri: "http://www.sitepoint.com",
+//   method: "GET",
+//   timeout: 10000,
+//   followRedirect: true,
+//   maxRedirects: 10
+// }, function(error, response, body) {
+//   console.log(body);
+// });
 
 var bodyParser = require('body-parser');
 var port = process.env.PORT || 8080;
