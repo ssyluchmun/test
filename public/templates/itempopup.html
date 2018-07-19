@@ -1,0 +1,25 @@
+<ion-modal-view>
+  
+  <ion-content> 
+            
+        <form>
+                <fieldset class="uk-fieldset" style="padding-left: 25px;padding-right: 25px;">
+             
+                    <div class="spacer" style="height:25px;"></div>
+            
+                    <div class="uk-margin">
+                                <textarea class="uk-textarea uk-text-large uk-text-success uk-text-bold" style="color: black;border-color: transparent" rows="1" ng-model="mainpopup.title" placeholder="Enter a title here"></textarea>
+                            </div> 
+            
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea uk-text-primary uk-text-large" style="border-color: transparent" rows="3" ng-model="mainpopup.content" placeholder="Type content here"></textarea>
+                    </div>
+     
+                </fieldset>
+            </form>
+            <div class="spacer" style="height:100px;"></div>
+     <center><button class="uk-button uk-button-primary" ng-click="savechanges(mainpopup)">Save Changes</button></center>
+
+            
+  </ion-content>
+</ion-modal-view>
